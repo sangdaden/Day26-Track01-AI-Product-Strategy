@@ -17,27 +17,63 @@ File này khai báo 2 thành viên trong nhóm + phân công thực hiện.
 
 | # | Mã học viên | Họ tên đầy đủ | Phân công chính |
 |---|---|---|---|
-| 1 | A20-XXXXX | [...] | [...] |
-| 2 | A20-XXXXX | [...] | [...] |
+| 1 | 2A202600280 | Phan Thanh Sang | Test + chụp screenshot Sản phẩm A (NotebookLM); viết draft S1 (Product Moment) + S2 (Workflow); làm liên hệ Lab 1 case Stack Overflow ở S5.8 |
+| 2 | 2A202600314 | [Trần Tiến Dũng] | Test + chụp screenshot Sản phẩm B (Claude Projects); viết draft S3 (Friction Audit) + S4 (Moat Check); chuẩn bị slide deck export PDF |
 
 ---
 
 ## Nhiệm vụ thử nghiệm chung
 
-[Mô tả 1-2 câu nhiệm vụ chung mà cả 2 thành viên cùng test trên 2 sản phẩm. Ví dụ: "Viết bản tóm tắt 200 từ về tác động của AI lên ngành ed-tech, có dẫn nguồn."]
+Cả 2 thành viên cùng test trên 2 sản phẩm **cùng 1 bộ input + cùng 1 prompt**: upload 3 file PDF về case "Stack Overflow bị ChatGPT disrupt" (lấy từ nguồn Lab 1 — TechCrunch sa thải, Eric Holscher decline data, OpenAI partnership), rồi yêu cầu mỗi sản phẩm tạo **bản tóm tắt 500 từ có dẫn nguồn cụ thể** (mỗi nhận định phải link về file PDF + đoạn nào).
 
-**Ngành chọn**: [A — Tìm kiếm / B — Lập trình / C — Viết lách / D — Nghiên cứu]
+Lý do chọn use case này: trùng pipeline thật của Lab 1 — research + tóm tắt + cite source — nên có thể đối chiếu chất lượng output với phân tích Lab 1 đã làm.
 
-**Sản phẩm A**: [tên + URL]
+**Ngành chọn**: D — Nghiên cứu
 
-**Sản phẩm B**: [tên + URL]
+**Sản phẩm A**: **NotebookLM** (Google) — <https://notebooklm.google.com>
+
+**Sản phẩm B**: **Claude Projects** (Anthropic) — <https://claude.ai> (feature Projects, có trong gói Pro/Team)
+
+### File PDF dùng chung cho cả 2 test
+
+Cả 2 thành viên upload **cùng 3 PDF** sau (export từ URL Lab 1):
+
+1. TechCrunch — "Stack Overflow cuts 28% of its staff" (17/10/2023) — bài về sa thải đợt 2
+2. Eric Holscher — "Stack Overflow's decline" (21/01/2025) — phân tích dữ liệu giảm câu hỏi
+3. OpenAI blog — "API Partnership with Stack Overflow" (06/05/2024) — bài thoả thuận data
+
+### Prompt chung dùng cho cả 2 sản phẩm (không sửa giữa 2 lần test)
+
+```text
+Dựa trên 3 file PDF tôi đã upload, viết 1 bản tóm tắt 500 từ về case
+"Stack Overflow bị disrupt bởi ChatGPT" theo cấu trúc:
+1. Bối cảnh (100 từ)
+2. Sự kiện gãy + số liệu cụ thể (200 từ)
+3. Phản ứng của Stack Overflow (150 từ)
+4. Nhận định cốt lõi (50 từ)
+
+Mỗi số liệu hoặc nhận định phải có citation rõ ràng đến file PDF cụ thể
+(tên file + đoạn nào / page nào nếu có).
+Trả lời bằng tiếng Việt.
+```
 
 ---
 
 ## Phân chia screenshot
 
-- Sản phẩm A → [Mã học viên nào phụ trách chụp]
-- Sản phẩm B → [Mã học viên nào phụ trách chụp]
+- Sản phẩm A (NotebookLM) → **2A202600280 — Phan Thanh Sang** phụ trách chụp
+- Sản phẩm B (Claude Projects) → **2A202600314 — [Trần Tiến Dũng]** phụ trách chụp
+
+Mỗi sản phẩm chụp tối thiểu 6 ảnh theo `screenshots/README.md`:
+
+- `product-A-1-entry.png` — trang chủ NotebookLM
+- `product-A-2-input.png` — sau khi upload 3 PDF
+- `product-A-3-output.png` — bản tóm tắt 500 từ trả ra
+- `product-A-4-source.png` — phần dẫn nguồn (NotebookLM có inline citation click được)
+- `product-A-5-pricing.png` — trang giá NotebookLM Plus / Google AI Premium
+- `product-A-6-limit.png` — nếu gặp quota (ít khả năng vì free tier rất rộng)
+
+Tương tự với product-B-* cho Claude Projects.
 
 ---
 
@@ -46,6 +82,7 @@ File này khai báo 2 thành viên trong nhóm + phân công thực hiện.
 - Mỗi thành viên copy folder `02-product-comparison/` (đã hoàn thiện) vào repo cá nhân của mình.
 - Slide deck `analysis-report.pdf` và `analysis-report-link.md` (nếu có) là sản phẩm chung — 2 thành viên cùng tên trong credits của slide deck.
 - File `group-members.md` này phải giống nhau ở cả 2 repo cá nhân (cùng nội dung, cùng 2 mã học viên).
+- **Thành viên 2 cần điền lại**: thay placeholder `2A202600314` và `[Trần Tiến Dũng]` bằng thông tin thật trước khi commit final.
 
 ---
 

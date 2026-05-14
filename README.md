@@ -18,7 +18,7 @@ Quy tắc cốt lõi: **không có bằng chứng = không có nhận định**.
 
 Cú pháp: **`Day26-MãHọcViên`**
 
-Mã học viên = `A20-XXXXX` do BTC cấp. Mỗi học viên có 1 kho GitHub riêng, không nộp chung theo nhóm.
+Mã học viên = `2A202600280` do BTC cấp. Mỗi học viên có 1 kho GitHub riêng, không nộp chung theo nhóm.
 
 Ví dụ: `Day26-A20-00045`, `Day26-A20-00103`.
 
@@ -56,12 +56,12 @@ Day26-MãHọcViên/                                ← kho GitHub công khai (1
 Sao chép mẫu này vào `README.md` ở gốc kho bài và điền:
 
 ```markdown
-# Day 26 — A20-XXXXX [Họ tên]
+# Day 26 — 2A202600280 [Phan Thanh Sang]
 
 ## Thông tin học viên
 
-- Mã học viên: A20-XXXXX
-- Họ tên: [...]
+- Mã học viên: 2A202600280
+- Họ tên: [Phan Thanh Sang]
 - Track: AI Product Strategy
 
 ## Kết quả cuối
